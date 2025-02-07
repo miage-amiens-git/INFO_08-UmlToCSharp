@@ -14,11 +14,4 @@ upjv.Gardienner("F", "Kevin Marchand");
 
 Console.WriteLine(upjv.ToString());
 
-List<Salle> salles = upjv.Batiments[0].FindSallesMitoyennes(1);
-Console.WriteLine("il y a "+salles.Count+" salles qui partagent le mur 1 : ");
-foreach (Salle s in salles)
-{ 
-    Console.WriteLine(s.ToString()); 
-}
-
 

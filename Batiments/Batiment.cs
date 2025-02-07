@@ -20,13 +20,6 @@ public class Batiment
     {
         return Murs.FirstOrDefault(x => x.Id == id);
     }
-
-    public List<Salle> FindSallesMitoyennes(int idMur)
-    {
-        Mur m =FindMur(idMur);
-        List<Salle> salles = Salles.FindAll(p=>p.Murs.Contains(m));
-        return salles;
-    }
    
     public Salle AddSalle(string nomSalle, int [] murs)
     {
